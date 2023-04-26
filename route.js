@@ -1,0 +1,19 @@
+const app = angular.module("myApp",["ngRoute"]);
+app.config(function($routeProvider){
+    $routeProvider
+    .when('/',{
+        templateUrl:"views/trangchu.html",
+    })
+    .when('/book',{
+        templateUrl:"views/book.html",
+        controller:"bookctrl",
+    })
+    .when('/book/add',{
+        templateUrl:"views/add.html",
+        controller:"addctrl",
+    })
+    .when('/book/edit/:id',{
+        templateUrl:"views/edit.html",
+        controller:"editctrl",
+    })
+})

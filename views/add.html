@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-center p-5">
+        trang thêm sách
+    </h1>
+    <form name="formadd">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">tên sách</label>
+          <input type="text" class="form-control" ng-model="name" name="nameadd" id="exampleInputEmail1" required aria-describedby="emailHelp"><label for="" ng-hide="formadd.nameadd.$valid">không được bỏ trống</label>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">tác giả</label>
+          <input type="text" class="form-control" ng-model="author" name="authoradd" id="exampleInputPassword1" required><label for="" ng-hide="formadd.authoradd.$valid">không được bỏ trống</label>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">giá</label>
+            <input type="text" class="form-control" ng-model="price" name="priceadd" id="exampleInputPassword1" required><label for="" ng-hide="formadd.priceadd.$valid">không được bỏ trống</label>
+          </div>
+        <button type="submit" ng-click="addb()" class="btn btn-primary">thêm</button>
+      </form>
+</body>
+</html>
